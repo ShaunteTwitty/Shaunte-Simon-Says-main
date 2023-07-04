@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+html {
+  background: url('../assets/background.png') no-repeat center center fixed;
+  box-sizing: border-box;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body {
+  color: yellow;
+  font-family: 'Rubik Microbe', sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+main {
+  background-color: #1d7b77;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(249, 131, 151);
+  
+}
+
+.game-controls {
+  text-align: center;
+}
+
+.start-button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: rgb(249, 131, 151);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid yellow;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  color: rgb(250, 66, 250);
+  font-size: 18px;
+  border-color: greenyellow;
+  transform: rotate(5deg);
+}
+
+.status {
+  font-size: 22px;
+}
+
+.pad-container {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px;
+  grid-gap: 5px;
+  margin: 20px;
+}
+
+.pad-red {
+  border-top-left-radius: 200px;
+  background-color: rgb(140, 0, 255);
+}
+
+.pad-red:hover,
+.pad-red:focus {
+  background-color: rgb(177, 99, 241);
+  transform: rotate(-5deg);
+}
+
+.pad-red:active,
+.pad-red.activated {
+  background-color: rgb(220, 185, 249);
+  transform: translateY(10px);
+}
+
+.pad-green {
+  border-top-right-radius: 200px;
+  background-color: rgb(6, 218, 179);
+}
+
+.pad-green:hover,
+.pad-green:focus {
+  background-color: rgb(97, 242, 215);
+  transform: rotate(5deg);
+}
+
+.pad-green:active,
+.pad-green.activated {
+  background-color: rgb(171, 247, 233);
+  transform: translateY(10px);
+}
+
+.pad-yellow {
+  border-bottom-right-radius: 200px;
+  background-color: rgb(252, 234, 37);
+}
+
+.pad-yellow:hover,
+.pad-yellow:focus {
+  background-color: rgb(248, 236, 101);
+  transform: rotate(5deg);
+}
+
+.pad-yellow:active,
+.pad-yellow.activated {
+  background-color: rgb(253, 247, 187);
+  transform: translateY(10px);
+}
+
+.pad-blue {
+  border-bottom-left-radius: 200px;
+  background-color: rgb(26, 123, 250);
+}
+
+.pad-blue:hover,
+.pad-blue:focus {
+  background-color: #139ddd;
+  transform: rotate(5deg);
+}
+
+.pad-blue:active,
+.pad-blue.activated {
+  background-color: #8cd8fc;
+  transform: translateY(10px);
+}
+
+.hidden {
+  display: none;
+}
+
+.unclickable {
+  pointer-events: none;
+}
